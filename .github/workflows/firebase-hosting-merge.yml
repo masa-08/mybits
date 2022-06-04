@@ -1,0 +1,29 @@
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches:
+      - main
+    types: [closed]
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install dependencies
+        run: yarn
+      - name: Build app
+        run: yarn build:dev
+      - name: Deploy to live channel on firestore (develop)
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYBITS_DEV }}'
+          channelId: live
+          projectId: mybits-dev
