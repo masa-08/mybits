@@ -7,7 +7,9 @@
     "build": "tsc && VITE_APP_ENV=production vite build",
     "build:dev": "tsc && VITE_APP_ENV=development vite build --mode development",
     "preview": "vite preview",
-    "deploy:dev": "yarn build:dev && firebase deploy"
+    "deploy:dev": "yarn build:dev && firebase deploy",
+    "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
+    "check-types": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
     "firebase": "^9.8.2",
@@ -28,7 +30,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-n": "^15.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
     "postcss": "^8.4.14",
