@@ -6,14 +6,17 @@
     "dev": "vite",
     "build": "tsc && VITE_APP_ENV=production vite build",
     "build:dev": "tsc && VITE_APP_ENV=development vite build --mode development",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:dev": "yarn build:dev && firebase deploy"
   },
   "dependencies": {
+    "firebase": "^9.8.2",
     "normalize.css": "^8.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@types/firebase": "^3.2.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
