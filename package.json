@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "deploy:dev": "yarn build:dev && firebase deploy",
     "lint": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
-    "check-types": "tsc --project tsconfig.json --pretty --noEmit"
+    "check-types": "tsc --project tsconfig.json --pretty --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "firebase": "^9.8.2",
@@ -33,6 +34,8 @@
     "eslint-plugin-n": "^15.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
@@ -43,5 +46,12 @@
     "semi": false,
     "singleQuote": true,
     "printWidth": 100
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint",
+      "bash -c yarn check-types",
+      "prettier --write"
+    ]
   }
 }
