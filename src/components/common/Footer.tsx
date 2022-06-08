@@ -5,7 +5,10 @@ export const Footer = () => {
         <div className="flex divide-gray-400 divide-x-2">
           <div className="flex items-center pr-1">
             <figure className="w-5 h-5">
-              <img src="src/assets/opensea-icon.svg" alt="opensea" />
+              <img
+                src="https://storage.cloud.google.com/mybits-test/opensea-icon.svg?authuser=3"
+                alt="opensea"
+              />
             </figure>
             <a href="#" className="px-1" style={{ color: '#2081E2' }}>
               OpenSea
@@ -13,7 +16,10 @@ export const Footer = () => {
           </div>
           <div className="flex items-center pl-2">
             <figure className="w-5 h-5">
-              <img src="src/assets/twitter-icon.svg" alt="opensea" />
+              <img
+                src="https://storage.cloud.google.com/mybits-test/twitter-icon.svg?authuser=3"
+                alt="opensea"
+              />
             </figure>
             <a href="#" className="px-1" style={{ color: '#1b9df0' }}>
               Twitter
