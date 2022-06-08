@@ -1,3 +1,5 @@
+import { Top } from './pages/Top'
+
 export const App = () => {
-  return <>Mybits app</>
+  return <Top />
 }
