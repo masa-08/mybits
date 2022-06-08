@@ -6,7 +6,7 @@ export const Footer = () => {
           <div className="flex items-center pr-1">
             <figure className="w-5 h-5">
               <img
-                src="https://storage.cloud.google.com/mybits-test/opensea-icon.svg?authuser=3"
+                src="https://storage.googleapis.com/mybits-test/opensea-icon.svg"
                 alt="opensea"
               />
             </figure>
@@ -17,8 +17,8 @@ export const Footer = () => {
           <div className="flex items-center pl-2">
             <figure className="w-5 h-5">
               <img
-                src="https://storage.cloud.google.com/mybits-test/twitter-icon.svg?authuser=3"
-                alt="opensea"
+                src="https://storage.googleapis.com/mybits-test/twitter-icon.svg"
+                alt="twitter"
               />
             </figure>
             <a href="#" className="px-1" style={{ color: '#1b9df0' }}>
