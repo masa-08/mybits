@@ -1,5 +1,10 @@
-import { Top } from './pages/Top'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRoutes } from './routes'
 
 export const App = () => {
-  return <Top />
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  )
 }
