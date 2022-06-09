@@ -1,16 +1,14 @@
-import { Filter, List } from '@/components/Top'
-import { ListItem } from '@/components/Top/ListItem'
-import { dummy } from '@/store'
+import { Link } from 'react-router-dom'
 
 export const Top = () => {
   return (
     <>
-      <Filter />
-      <List>
-        {dummy.map((d) => {
-          return <ListItem key={d.id} path={d.path} id={d.id} address={d.address} />
-        })}
-      </List>
+      {
+        // TODO: デザインができたら実装する
+      }
+      <Link to="babies">
+        <button className="btn">to baby gallery</button>
+      </Link>
     </>
   )
 }

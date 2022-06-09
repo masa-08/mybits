@@ -1,5 +1,5 @@
 import { Frame } from '@/components/common'
-import { Top, BabyDetail } from '@/pages'
+import { Top, BabyList, BabyDetail } from '@/pages'
 import { Route, Routes } from 'react-router-dom'
 
 export const AppRoutes = () => {
@@ -7,7 +7,7 @@ export const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Frame />}>
         <Route path="/" element={<Top />} />
-        <Route path="babies" element={<Top />}></Route>
+        <Route path="babies" element={<BabyList />} />
         <Route path="babies/:id" element={<BabyDetail />} />
       </Route>
     </Routes>
