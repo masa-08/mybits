@@ -7,7 +7,7 @@ type Props = {
 export const List: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div className="flex flex-wrap gap-3 p-3">{children}</div>
+      <div className="flex flex-wrap gap-3 py-3">{children}</div>
     </>
   )
 }
