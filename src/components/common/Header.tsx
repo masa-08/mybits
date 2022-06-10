@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom'
+
 export const Header = () => {
   return (
     <>
       <div className="navbar flex justify-between items-center px-3">
         <div className="flex flex-col items-start">
-          <p className="text-5xl leading-none">Mybits</p>
-          <p className="text-base leading-none text-gray-500">Catchcopy here</p>
+          <Link to="/">
+            <p className="text-5xl leading-none">NEOBABY</p>
+            <p className="text-base leading-none text-gray-500">Lovable NFT buddy</p>
+          </Link>
         </div>
         <div>
           <div>

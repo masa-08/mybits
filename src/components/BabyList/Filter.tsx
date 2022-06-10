@@ -1,8 +1,8 @@
 export const Filter = () => {
   return (
     <>
-      <div className="flex justify-end pr-3 sticky top-3 z-50">
-        <select className="select bg-gray-300 rounded-full select-sm text-xl">
+      <div className="flex justify-end sticky top-3 z-50">
+        <select className="select bg-black rounded-full select-sm text-xl text-white">
           <option disabled selected>
             Filter
           </option>

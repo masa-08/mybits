@@ -26,7 +26,7 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <p className="text-sm text-gray-400">&copy; 2022 MyBits</p>
+        <p className="text-sm text-gray-400">&copy; 2022 NEOBABY</p>
       </div>
     </>
   )
