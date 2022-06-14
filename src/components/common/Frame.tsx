@@ -7,7 +7,7 @@ export const Frame = () => {
     <>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <div className="px-3">
+        <div className="max-w-5xl mx-auto px-3 lg:px-0">
           <Outlet />
         </div>
         <div className="flex-1" />
