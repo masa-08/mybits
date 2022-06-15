@@ -1,0 +1,6 @@
+export { About } from './About'
+export { Banner } from './Banner'
+export { Gallery } from './Gallery'
+export { OpenSeaGuide } from './OpenSeaGuide'
+export { Roadmap } from './Roadmap'
+export { Updates } from './Updates'
