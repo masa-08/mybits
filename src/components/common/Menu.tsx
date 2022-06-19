@@ -1,21 +1,23 @@
+import { HashLink } from 'react-router-hash-link'
+
 export const Menu = () => {
   return (
     <>
       <ul className="menu menu-horizontal">
         <li>
-          <a href="#about">
+          <HashLink smooth to="/#about">
             <span className="text-3xl">About</span>
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a href="#gallery">
+          <HashLink smooth to="/#gallery">
             <span className="text-3xl">Gallery</span>
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a href="/#roadmap">
+          <HashLink smooth to="/#roadmap">
             <span className="text-3xl">Roadmap</span>
-          </a>
+          </HashLink>
         </li>
       </ul>
     </>

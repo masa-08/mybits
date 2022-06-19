@@ -9,6 +9,7 @@ export const QRIcon = () => {
         clipRule: 'evenodd',
         strokeLinejoin: 'round',
         strokeMiterlimit: 2,
+        height: '100%',
       }}
     >
       <path
@@ -33,6 +34,7 @@ export const HeartIcon = () => {
         clipRule: 'evenodd',
         strokeLinejoin: 'round',
         strokeMiterlimit: 2,
+        height: '100%',
       }}
     >
       <path
@@ -62,6 +64,7 @@ export const BuddyIcon = () => {
         clipRule: 'evenodd',
         strokeLinejoin: 'round',
         strokeMiterlimit: 2,
+        height: '100%',
       }}
     >
       <path
