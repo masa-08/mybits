@@ -4,7 +4,7 @@ export const Top = () => {
   return (
     <>
       <Banner />
-      <div className="flex justify-center">
+      <div className="flex justify-center px-3">
         <div className="max-w-5xl flex-grow">
           <div id="about" className="mt-20">
             <About />
