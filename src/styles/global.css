@@ -8,3 +8,18 @@
     font-family: VT323, system-ui, san-serif;
   }
 }
+
+@layer components {
+  .title-mobile {
+    @apply text-4xl leading-none
+  }
+  .title-mobile-top {
+    @apply title-mobile text-white
+  }
+  .subtitle-mobile {
+    @apply text-sm leading-none
+  }
+  .subtitle-mobile-top {
+    @apply subtitle-mobile text-white opacity-70
+  }
+}

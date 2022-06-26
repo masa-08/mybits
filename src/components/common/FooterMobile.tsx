@@ -1,11 +1,11 @@
 import { OpenseaIcon, TwitterIcon } from './Icons'
 
-export const Footer = () => {
+export const FooterMobile = () => {
   return (
     <>
-      <div className="hidden md:block">
-        <div className="p-3 pl-6 mt-12 bg-gray-300">
-          <div className="max-w-5xl mx-auto">
+      <div className="md:hidden">
+        <div className="p-3 pl-6 bg-gray-300">
+          <div className="mx-auto">
             <div className="flex justify-between items-center">
               <div className="flex divide-gray-100 divide-x">
                 <a href="#" className="flex items-center gap-2 pr-2" style={{ color: '#2081E2' }}>

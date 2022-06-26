@@ -1,11 +1,11 @@
 import { RoadmapItems } from './RoadmapItems'
 
-export const Roadmap = () => {
+export const RoadmapMobile = () => {
   return (
     <>
-      <div className="hidden md:block">
+      <div className="md:hidden">
         <p className="text-5xl leading-none px-3 mb-4">Roadmap</p>
-        <div className="flex gap-3 justify-between">
+        <div className="flex flex-col gap-3">
           <RoadmapItems />
         </div>
       </div>

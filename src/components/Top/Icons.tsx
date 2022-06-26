@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const QRIcon = () => {
   return (
     <svg
@@ -82,12 +84,18 @@ export const BuddyIcon = () => {
   )
 }
 
-export const BabyIcon = () => {
+type BabyIconProps = {
+  height: number
+  width: number
+  fill?: string
+}
+
+export const BabyIcon: React.FC<BabyIconProps> = ({ height, width, fill = 'none' }) => {
   return (
     <svg
-      fill="none"
-      height={315}
-      width={315}
+      fill={fill}
+      height={height}
+      width={width}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
