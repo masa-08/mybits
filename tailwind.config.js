@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'top-image': "url('/src/assets/neobaby-top-image.webp')",
+        'top-image-mobile': "url('/src/assets/neobaby-top-image-mobile.webp')",
       },
       margin: {
         adjusted: 'calc((100vw - 1024px) / 2)',
