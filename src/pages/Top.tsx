@@ -1,28 +1,50 @@
-import { About, Banner, Gallery, OpenSeaGuide, Roadmap, Updates } from '@/components/Top'
+import { FooterMobile } from '@/components/common'
+import {
+  About,
+  AboutMobile,
+  Banner,
+  BannerMobile,
+  FrameTopDesktop,
+  Gallery,
+  GalleryMobile,
+  OpenSeaGuide,
+  OpenSeaGuideMobile,
+  Roadmap,
+  Updates,
+} from '@/components/Top'
+import { RoadmapMobile } from '@/components/Top/RoadmapMobile'
 
 export const Top = () => {
   return (
     <>
-      <Banner />
-      <div className="flex justify-center px-3">
-        <div className="max-w-5xl flex-grow">
-          <div id="about" className="mt-20">
-            <About />
-          </div>
-          <div id="gallery" className="mt-20">
-            <Gallery />
-          </div>
-          <div id="roadmap" className="mt-20">
-            <Roadmap />
-          </div>
-          <div id="updates" className="mt-20">
-            <Updates />
+      <FrameTopDesktop>
+        <Banner />
+        <BannerMobile />
+        <div className="px-3 md:flex md:justify-center md:max-w-5xl md:flex-grow">
+          <div>
+            <div id="about" className="mt-14 md:mt-20">
+              <About />
+              <AboutMobile />
+            </div>
+            <div id="gallery" className="mt-14 md:mt-20">
+              <Gallery />
+              <GalleryMobile />
+            </div>
+            <div id="roadmap" className="mt-14 md:mt-20">
+              <Roadmap />
+              <RoadmapMobile />
+            </div>
+            <div id="updates" className="mt-14 md:mt-20">
+              <Updates />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mt-20 -mb-12">
-        <OpenSeaGuide />
-      </div>
+        <div className="mt-14 md:mt-20 md:-mb-12">
+          <OpenSeaGuide />
+          <OpenSeaGuideMobile />
+        </div>
+        <FooterMobile />
+      </FrameTopDesktop>
     </>
   )
 }
