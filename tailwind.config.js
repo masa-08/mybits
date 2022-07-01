@@ -16,6 +16,9 @@ module.exports = {
       colors: {
         'gray-blue': '#EDF2F5',
       },
+      fontFamily: {
+        fira: 'Fira Sans, san-serif',
+      },
     },
   },
   plugins: [require('daisyui')],
