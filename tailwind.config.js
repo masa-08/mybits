@@ -13,6 +13,9 @@ module.exports = {
       height: {
         banner: 'calc(100vw / 2.5)',
       },
+      colors: {
+        'gray-blue': '#EDF2F5',
+      },
     },
   },
   plugins: [require('daisyui')],
