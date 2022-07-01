@@ -10,7 +10,6 @@ export const Header = () => {
           <div className="flex flex-col items-start">
             <Link to="/">
               <p className="text-5xl leading-none">NEOBABY</p>
-              <p className="text-base leading-none text-gray-500">Lovable NFT buddy</p>
             </Link>
           </div>
           <div>

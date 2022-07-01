@@ -13,6 +13,12 @@ module.exports = {
       height: {
         banner: 'calc(100vw / 2.5)',
       },
+      colors: {
+        'gray-blue': '#EDF2F5',
+      },
+      fontFamily: {
+        fira: 'Fira Sans, san-serif',
+      },
     },
   },
   plugins: [require('daisyui')],
