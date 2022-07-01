@@ -43,7 +43,7 @@ export const BabyDetail = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1" />
+          <div className="flex-1 mb-4" />
           <FooterMobile />
         </div>
       </div>
