@@ -12,16 +12,16 @@ export const Footer = () => {
                   <figure className="w-5 h-5">
                     <OpenseaIcon />
                   </figure>
-                  OpenSea
+                  <span className="text-2xl">OpenSea</span>
                 </a>
                 <a href="#" className="flex items-center gap-2 pl-2" style={{ color: '#1b9df0' }}>
                   <figure className="w-5 h-5">
                     <TwitterIcon />
                   </figure>
-                  Twitter
+                  <span className="text-2xl">Twitter</span>
                 </a>
               </div>
-              <p className="text-sm text-gray-400">&copy; 2022 NEOBABY</p>
+              <p className="text-xl text-gray-400">&copy; 2022 NEOBABY</p>
             </div>
           </div>
         </div>
