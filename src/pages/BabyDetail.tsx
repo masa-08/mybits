@@ -18,7 +18,9 @@ export const BabyDetail = () => {
             <div className="flex flex-col gap-6">
               <Description id={params.id} />
               <div className="pt-6">
-                <button className="btn btn-circle w-full h-16 text-3xl">View in OpenSea</button>
+                <button className="btn btn-circle w-full h-16 text-3xl bg-base-100 border-none text-base-content">
+                  View in OpenSea
+                </button>
               </div>
             </div>
           </div>
@@ -39,7 +41,9 @@ export const BabyDetail = () => {
             <div className="px-3 pt-6">
               <DescriptionMobile id={params.id} />
               <div className="pt-6">
-                <button className="btn w-full text-xl">View in OpenSea</button>
+                <button className="btn w-full text-xl bg-base-100 border-none text-base-content">
+                  View in OpenSea
+                </button>
               </div>
             </div>
           </div>
