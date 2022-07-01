@@ -1,4 +1,4 @@
-import { OpenseaIcon, TwitterIcon } from './Icons'
+import { OpenseaIconBlue, TwitterIconBlue } from './Icons'
 
 export const FooterMobile = () => {
   return (
@@ -10,13 +10,13 @@ export const FooterMobile = () => {
               <div className="flex">
                 <a href="#" className="flex items-center gap-2 pr-2" style={{ color: '#2081E2' }}>
                   <figure className="w-5 h-5">
-                    <OpenseaIcon />
+                    <OpenseaIconBlue />
                   </figure>
                   <span className="text-xl">OpenSea</span>
                 </a>
                 <a href="#" className="flex items-center gap-2 pl-2" style={{ color: '#1b9df0' }}>
                   <figure className="w-5 h-5">
-                    <TwitterIcon />
+                    <TwitterIconBlue />
                   </figure>
                   <span className="text-xl">Twitter</span>
                 </a>
