@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { Menu, X } from 'react-feather'
 import { HeaderMobileLogo } from './HeaderMobileLogo'
-import { OpenseaIcon, TwitterIcon } from './Icons'
+import { OpenseaIconBlue, TwitterIconBlue } from './Icons'
 
 type Props = {
   top?: boolean
@@ -40,7 +40,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
             <li>
               <a href="#" className="flex items-center gap-2" style={{ color: '#2081E2' }}>
                 <figure className="w-7 h-7">
-                  <OpenseaIcon />
+                  <OpenseaIconBlue />
                 </figure>
                 <span className="text-3xl">OpenSea</span>
               </a>
@@ -48,7 +48,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
             <li>
               <a href="#" className="flex items-center gap-2" style={{ color: '#1b9df0' }}>
                 <figure className="w-7 h-7">
-                  <TwitterIcon />
+                  <TwitterIconBlue />
                 </figure>
                 <span className="text-3xl">Twitter</span>
               </a>

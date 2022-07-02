@@ -16,19 +16,13 @@ export const Header = () => {
             <div className="hidden md:block">
               <Menu />
             </div>
-            <div className="md:border-l-2 md:border-gray-400 pl-3">
-              <figure className="w-7 h-7">
-                <a href="#">
-                  <OpenseaIcon color="#2F2F2F" />
-                </a>
-              </figure>
-            </div>
-            <div className="pl-3 align-middle">
-              <figure className="w-7 h-7 align-middle">
-                <a href="#">
-                  <TwitterIcon color="#2F2F2F" />
-                </a>
-              </figure>
+            <div className="pl-3 flex gap-3 justify-center">
+              <div className="w-8 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
+                <OpenseaIcon />
+              </div>
+              <div className="w-8 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
+                <TwitterIcon />
+              </div>
             </div>
           </div>
         </div>
