@@ -1,0 +1,29 @@
+name: Deploy to Firebase Hosting production environment on tag push
+
+on:
+  push:
+    branches-ignore:
+      - "**"
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Install dependencies
+        run: yarn
+      - name: Build app
+        run: yarn build
+      - name: Deploy to live channel on firestore (production)
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEOBABY_PROD }}'
+          channelId: live
+          projectId: neobaby-spa
