@@ -19,6 +19,10 @@ module.exports = {
       fontFamily: {
         fira: 'Fira Sans, san-serif',
       },
+      boxShadow: {
+        flat: '6px 6px',
+        'flat-sm': '3px 3px',
+      },
     },
   },
   plugins: [require('daisyui')],

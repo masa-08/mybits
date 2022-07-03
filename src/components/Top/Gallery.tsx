@@ -55,7 +55,7 @@ export const Gallery = () => {
         </div>
         <div className="p-6 flex justify-center">
           <Link to="babies">
-            <button className="btn rounded-2xl w-fit h-fit text-3xl px-24 py-5 bg-base-100 border-none text-base-content">
+            <button className="btn rounded-2xl border-base-content border-2 shadow-flat shadow-base-content w-fit h-fit text-3xl px-24 py-5 bg-base-100 text-base-content">
               View all
             </button>
           </Link>

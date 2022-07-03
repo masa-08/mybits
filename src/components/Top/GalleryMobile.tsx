@@ -35,7 +35,7 @@ export const GalleryMobile = () => {
         </div>
         <div className="pt-3">
           <Link to="babies">
-            <button className="btn rounded-2xl w-full h-fit text-3xl px-24 py-4 bg-base-100 border-none text-base-content">
+            <button className="btn rounded-2xl w-full h-fit text-3xl px-24 py-4 bg-base-100 text-base-content shadow-flat-sm shadow-base-content border-base-content border-2">
               View all
             </button>
           </Link>
