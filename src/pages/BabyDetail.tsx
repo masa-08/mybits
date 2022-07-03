@@ -41,7 +41,7 @@ export const BabyDetail = () => {
             <div className="px-3 pt-6">
               <DescriptionMobile id={params.id} />
               <div className="pt-6">
-                <button className="btn w-full text-xl bg-base-100 text-base-content shadow-flat-sm shadow-base-content border-base-content border-2">
+                <button className="btn rounded-full w-full text-xl bg-base-100 text-base-content shadow-flat-sm shadow-base-content border-base-content border-2">
                   View in OpenSea
                 </button>
               </div>

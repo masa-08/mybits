@@ -17,10 +17,10 @@ export const Header = () => {
               <Menu />
             </div>
             <div className="pl-3 flex gap-3 justify-center">
-              <div className="w-8 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
+              <div className="w-8 shadow-flat-xs shadow-gray-500 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
                 <OpenseaIcon />
               </div>
-              <div className="w-8 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
+              <div className="w-8 shadow-flat-xs shadow-gray-500 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
                 <TwitterIcon />
               </div>
             </div>

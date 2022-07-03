@@ -21,7 +21,8 @@ module.exports = {
       },
       boxShadow: {
         flat: '6px 6px',
-        'flat-sm': '3px 3px',
+        'flat-sm': '4px 4px',
+        'flat-xs': '2px 2px',
       },
     },
   },
