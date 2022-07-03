@@ -13,27 +13,31 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
 
   return (
     <>
-      <Menu className={`${top && 'text-white'}`} size={36} onClick={() => setModal(true)} />
+      <Menu
+        className={`${top && 'text-white'} dark:text-white`}
+        size={36}
+        onClick={() => setModal(true)}
+      />
       <div className={`h-screen w-screen rounded-none p-0 z-50 fixed ${modal || 'hidden'}`}>
         <div className="bg-base-100 h-full w-full -ml-6 -mt-8">
           <div className="navbar flex justify-between items-start px-6 pt-4">
             <HeaderMobileLogo />
-            <X size={36} onClick={() => setModal(false)} />
+            <X className="dark:text-white" size={36} onClick={() => setModal(false)} />
           </div>
           <ul className="menu px-2 mt-2">
             <li>
               <HashLink smooth to="/#about" onClick={() => setModal(false)}>
-                <span className="text-3xl">About</span>
+                <span className="text-3xl dark:text-white">About</span>
               </HashLink>
             </li>
             <li>
               <HashLink smooth to="/#gallery" onClick={() => setModal(false)}>
-                <span className="text-3xl">Gallery</span>
+                <span className="text-3xl dark:text-white">Gallery</span>
               </HashLink>
             </li>
             <li>
               <HashLink smooth to="/#roadmap" onClick={() => setModal(false)}>
-                <span className="text-3xl">Roadmap</span>
+                <span className="text-3xl dark:text-white">Roadmap</span>
               </HashLink>
             </li>
             <div className="border-t-gray-300 border w-full my-4" />

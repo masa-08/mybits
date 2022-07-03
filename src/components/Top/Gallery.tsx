@@ -5,7 +5,7 @@ export const Gallery = () => {
   return (
     <>
       <div className="hidden md:block">
-        <p className="text-5xl px-3 mb-4">Gallery</p>
+        <p className="text-5xl px-3 mb-4 dark:text-white">Gallery</p>
         <div className="flex gap-3">
           <figure style={{ flex: '0 0 calc(50% - 6px)' }}>
             <Link to="/babies/001">
@@ -79,7 +79,12 @@ export const Gallery = () => {
         </div>
         <div className="p-6 flex justify-center">
           <Link to="babies">
-            <button className="btn rounded-2xl w-fit h-fit text-3xl px-24 py-5 bg-base-100 border-none text-base-content">
+            <button
+              className="btn rounded-full font-normal w-fit h-fit px-24 py-5
+                  text-4xl text-black bg-white hover:bg-opacity-50
+                  border-2 border-black shadow-flat-md shadow-black
+                  dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
+            >
               View all
             </button>
           </Link>

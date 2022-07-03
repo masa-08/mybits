@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="navbar flex justify-between items-center px-3 max-w-5xl mx-auto">
           <div className="flex flex-col items-start">
             <Link to="/">
-              <p className="text-5xl leading-none">NEOBABY</p>
+              <p className="text-5xl dark:text-white leading-none">NEOBABY</p>
             </Link>
           </div>
           <div>
