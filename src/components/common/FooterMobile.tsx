@@ -8,13 +8,21 @@ export const FooterMobile = () => {
           <div className="mx-auto">
             <div className="flex justify-between items-center">
               <div className="flex">
-                <a href="#" className="flex items-center gap-2 pr-2" style={{ color: '#2081E2' }}>
+                <a
+                  href="https://opensea.io/collection/neobaby"
+                  className="flex items-center gap-2 pr-2"
+                  style={{ color: '#2081E2' }}
+                >
                   <figure className="w-5 h-5">
                     <OpenseaIconBlue />
                   </figure>
                   <span className="text-xl">OpenSea</span>
                 </a>
-                <a href="#" className="flex items-center gap-2 pl-2" style={{ color: '#1b9df0' }}>
+                <a
+                  href="https://twitter.com/harufy009"
+                  className="flex items-center gap-2 pl-2"
+                  style={{ color: '#1b9df0' }}
+                >
                   <figure className="w-5 h-5">
                     <TwitterIconBlue />
                   </figure>

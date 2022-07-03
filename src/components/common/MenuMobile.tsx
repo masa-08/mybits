@@ -38,7 +38,11 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
             </li>
             <div className="border-t-gray-300 border w-full my-4" />
             <li>
-              <a href="#" className="flex items-center gap-2" style={{ color: '#2081E2' }}>
+              <a
+                href="https://opensea.io/collection/neobaby"
+                className="flex items-center gap-2"
+                style={{ color: '#2081E2' }}
+              >
                 <figure className="w-7 h-7">
                   <OpenseaIconBlue />
                 </figure>
@@ -46,7 +50,11 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2" style={{ color: '#1b9df0' }}>
+              <a
+                href="https://twitter.com/harufy009"
+                className="flex items-center gap-2"
+                style={{ color: '#1b9df0' }}
+              >
                 <figure className="w-7 h-7">
                   <TwitterIconBlue />
                 </figure>
