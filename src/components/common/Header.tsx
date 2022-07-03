@@ -18,10 +18,14 @@ export const Header = () => {
             </div>
             <div className="pl-3 flex gap-3 justify-center">
               <div className="w-8 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
-                <OpenseaIcon />
+                <a href="https://opensea.io/collection/neobaby">
+                  <OpenseaIcon />
+                </a>
               </div>
               <div className="w-8 rounded-full border-gray-500 border bg-gray-500 dark:bg-base-100">
-                <TwitterIcon />
+                <a href="https://twitter.com/harufy009">
+                  <TwitterIcon />
+                </a>
               </div>
             </div>
           </div>
