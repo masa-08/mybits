@@ -19,7 +19,12 @@ export const BabyDetail = () => {
               <Description id={params.id} />
               <div className="pt-6">
                 <a href="https://opensea.io/collection/neobaby">
-                  <button className="btn btn-circle w-full h-16 text-3xl bg-base-100 border-none text-base-content">
+                  <button
+                    className="btn rounded-full font-normal w-full h-fit px-11 py-3
+                    text-4xl text-black bg-white hover:bg-opacity-50
+                    border-2 border-black shadow-flat-md shadow-black
+                  dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
+                  >
                     View in OpenSea
                   </button>
                 </a>

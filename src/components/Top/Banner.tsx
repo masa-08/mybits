@@ -8,7 +8,11 @@ export const Banner = () => {
             <p className="text-7xl text-white">your lovable NFT buddy.</p>
             <div className="pt-5">
               <a href="https://opensea.io/collection/neobaby">
-                <button className="btn w-fit h-fit px-12 py-5 text-4xl bg-gray-300 text-black bg-opacity-80 hover:text-gray-300">
+                <button
+                  className="btn rounded-full font-normal w-fit h-fit px-12 py-5
+                  text-4xl text-white bg-transparent hover:bg-opacity-50
+                  border-2 border-white shadow-flat-md shadow-white"
+                >
                   view in opensea
                 </button>
               </a>
