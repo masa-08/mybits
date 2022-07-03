@@ -18,6 +18,9 @@ module.exports = {
         black: '#2F2F2F',
         'light-slate': '#616E8D',
         'dark-slate': '#1F283D',
+        'dark-bg': '#2B344A',
+        'dark-content': '#979DB6',
+        'dark-blue': '#303E60',
       },
       fontFamily: {
         fira: 'Fira Sans, san-serif',

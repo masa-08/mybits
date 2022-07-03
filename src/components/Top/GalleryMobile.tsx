@@ -5,7 +5,7 @@ export const GalleryMobile = () => {
   return (
     <>
       <div className="md:hidden">
-        <p className="text-5xl px-3 mb-4">Gallery</p>
+        <p className="text-5xl px-3 mb-4 dark:text-white">Gallery</p>
         <div className="flex gap-3">
           <figure style={{ flex: '0 0 calc(66.6% - 4px)' }}>
             <Link to="/babies/001">

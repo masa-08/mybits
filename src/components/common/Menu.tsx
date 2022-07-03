@@ -6,17 +6,17 @@ export const Menu = () => {
       <ul className="menu menu-horizontal">
         <li>
           <HashLink smooth to="/#about">
-            <span className="text-3xl">About</span>
+            <span className="text-3xl dark:text-white">About</span>
           </HashLink>
         </li>
         <li>
           <HashLink smooth to="/#gallery">
-            <span className="text-3xl">Gallery</span>
+            <span className="text-3xl dark:text-white">Gallery</span>
           </HashLink>
         </li>
         <li>
           <HashLink smooth to="/#roadmap">
-            <span className="text-3xl">Roadmap</span>
+            <span className="text-3xl dark:text-white">Roadmap</span>
           </HashLink>
         </li>
       </ul>

@@ -4,7 +4,7 @@ export const FooterMobile = () => {
   return (
     <>
       <div className="md:hidden">
-        <div className="pl-6 p-5 bg-gray-300">
+        <div className="pl-6 p-5 bg-gray-300 dark:bg-dark-blue">
           <div className="mx-auto">
             <div className="flex justify-between items-center">
               <div className="flex">

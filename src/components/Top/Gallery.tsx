@@ -5,7 +5,7 @@ export const Gallery = () => {
   return (
     <>
       <div className="hidden md:block">
-        <p className="text-5xl px-3 mb-4">Gallery</p>
+        <p className="text-5xl px-3 mb-4 dark:text-white">Gallery</p>
         <div className="flex gap-3">
           <figure style={{ flex: '0 0 calc(50% - 6px)' }}>
             <Link to="/babies/001">
