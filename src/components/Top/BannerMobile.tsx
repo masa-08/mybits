@@ -13,7 +13,11 @@ export const BannerMobile = () => {
               <p className="text-5xl text-white">NFT buddy.</p>
               <div className="pt-5">
                 <a href="https://opensea.io/collection/neobaby">
-                  <button className="btn rounded-full w-fit h-fit px-6 py-2 text-2xl border-2 border-white bg-transparent text-white hover:bg-opacity-50">
+                  <button
+                    className="btn rounded-full font-normal w-fit h-fit px-6 py-2
+                    text-2xl text-white bg-transparent hover:bg-opacity-50
+                    border-2 border-white shadow-flat-sm shadow-white"
+                  >
                     view in opensea
                   </button>
                 </a>

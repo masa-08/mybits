@@ -49,9 +49,14 @@ export const GalleryMobile = () => {
             </Link>
           </figure>
         </div>
-        <div className="pt-3">
+        <div className="pt-3 flex justify-center">
           <Link to="babies">
-            <button className="btn rounded-2xl w-full h-fit text-3xl px-24 py-4 bg-base-100 border-none text-base-content">
+            <button
+              className="btn rounded-full font-normal w-fit h-fit text-2xl px-16 py-2
+              text-black bg-white hover:bg-opacity-50
+              border-2 border-black shadow-flat-sm shadow-black
+              dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
+            >
               View all
             </button>
           </Link>

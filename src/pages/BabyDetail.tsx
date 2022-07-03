@@ -49,7 +49,12 @@ export const BabyDetail = () => {
               <DescriptionMobile id={params.id} />
               <div className="pt-6">
                 <a href="https://opensea.io/collection/neobaby">
-                  <button className="btn w-full text-xl bg-base-100 border-none text-base-content">
+                  <button
+                    className="btn rounded-full w-full h-fit py-2 text-2xl
+                              text-black bg-white hover:bg-opacity-50
+                              border-2 border-black shadow-flat-sm shadow-black
+                              dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
+                  >
                     View in OpenSea
                   </button>
                 </a>
