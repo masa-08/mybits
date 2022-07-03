@@ -1,3 +1,5 @@
+import { Button } from '../common'
+
 export const Banner = () => {
   return (
     <>
@@ -7,9 +9,14 @@ export const Banner = () => {
             <p className="text-5xl text-white">NEOBABY,</p>
             <p className="text-7xl text-white">your lovable NFT buddy.</p>
             <div className="pt-5">
-              <button className="btn rounded-full shadow-flat shadow-black border-black border-2 w-fit h-fit px-12 py-5 text-4xl bg-white text-black hover:text-gray-300">
-                view in opensea
-              </button>
+              <Button
+                text="View in OpenSea"
+                textSize="4xl"
+                textColor="white"
+                bgColor="transparent"
+                borderColor="white"
+                className="w-fit h-fit px-12 py-5 hover:border-white"
+              />
             </div>
           </div>
         </div>

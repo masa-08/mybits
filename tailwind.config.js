@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         'gray-blue': '#EDF2F5',
+        black: '#2F2F2F',
       },
       fontFamily: {
         fira: 'Fira Sans, san-serif',

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
+import { Button } from '../common'
 
 export const Gallery = () => {
   return (
@@ -55,9 +56,7 @@ export const Gallery = () => {
         </div>
         <div className="p-6 flex justify-center">
           <Link to="babies">
-            <button className="btn rounded-full border-base-content border-2 shadow-flat shadow-base-content w-fit h-fit text-3xl px-24 py-5 bg-base-100 text-base-content">
-              View all
-            </button>
+            <Button text="View all" textSize="4xl" className="w-fit h-fit px-24 py-5" />
           </Link>
         </div>
       </div>
