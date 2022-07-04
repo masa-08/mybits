@@ -1,9 +1,17 @@
+import { Parallax } from 'react-parallax'
+
 export const Banner = () => {
   return (
     <>
       <div className="hidden md:block">
-        <div className="w-screen h-banner bg-top-image bg-cover ml-force-screen">
-          <div className="flex flex-col justify-center gap-3 h-full px-3 lg:ml-adjusted">
+        <Parallax
+          blur={0}
+          bgImage="https://storage.googleapis.com/mybits-test/neobaby-top-image.webp"
+          bgImageAlt="image"
+          strength={100}
+          className="w-screen h-banner ml-force-screen"
+        >
+          <div className="flex flex-col justify-center gap-3 px-3 mt-12 h-banner-parallax-100 lg:ml-adjusted">
             <p className="text-5xl text-white">NEOBABY,</p>
             <p className="text-7xl text-white">your lovable NFT buddy.</p>
             <div className="pt-5">
@@ -18,7 +26,7 @@ export const Banner = () => {
               </a>
             </div>
           </div>
-        </div>
+        </Parallax>
       </div>
     </>
   )
