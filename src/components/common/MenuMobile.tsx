@@ -19,7 +19,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
         onClick={() => setModal(true)}
       />
       <div className={`h-screen w-screen rounded-none p-0 z-50 fixed ${modal || 'hidden'}`}>
-        <div className="bg-base-100 h-full w-full -ml-6 -mt-8">
+        <div className="bg-gray-blue dark:bg-dark-bg h-full w-full -ml-6 -mt-8">
           <div className="navbar flex justify-between items-start px-6 pt-4">
             <HeaderMobileLogo />
             <X className="dark:text-white" size={36} onClick={() => setModal(false)} />
@@ -40,7 +40,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
                 <span className="text-3xl dark:text-white">Roadmap</span>
               </HashLink>
             </li>
-            <div className="border-t-gray-300 border w-full my-4" />
+            <div className="border-t-gray-300 dark:border-t-dark-content border-t w-full my-4" />
             <li>
               <a
                 href="https://opensea.io/collection/neobaby"
