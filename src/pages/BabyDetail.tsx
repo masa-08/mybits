@@ -31,7 +31,7 @@ export const BabyDetail = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 mb-12 border-t border-black" />
+          <div className="mt-16 mb-12 border-t border-light-content dark:border-dark-content" />
           <Carousel />
         </div>
       </div>
