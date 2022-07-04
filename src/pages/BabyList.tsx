@@ -1,5 +1,5 @@
 import { HeaderMobile, FooterMobile } from '@/components/common'
-import { Filter, List, ListItem, ListItemMobile } from '@/components/BabyList'
+import { List, ListItem, ListItemMobile } from '@/components/BabyList'
 import { dummy } from '@/store'
 
 export const BabyList = () => {
@@ -7,7 +7,6 @@ export const BabyList = () => {
     <>
       <div className="hidden md:block">
         <div className="px-3">
-          <Filter />
           <List>
             {dummy.map((d) => {
               return <ListItem key={d.id} path={d.path} id={d.id} address={d.address} />
