@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
+import { SectionIcon } from './SectionIcon'
 
 export const GalleryMobile = () => {
   return (
     <>
       <div className="md:hidden">
-        <p className="text-5xl px-3 mb-4 dark:text-white">Gallery</p>
+        <div className="flex gap-3 px-3">
+          <div className="my-2">
+            <SectionIcon />
+          </div>
+          <p className="text-5xl mb-4 dark:text-white">Gallery</p>
+        </div>
         <div className="flex gap-3">
           <figure style={{ flex: '0 0 calc(66.6% - 4px)' }}>
             <Link to="/babies/001">
@@ -50,9 +56,9 @@ export const GalleryMobile = () => {
           </figure>
         </div>
         <div className="pt-3 flex justify-center">
-          <Link to="babies">
+          <Link to="babies" className="w-full">
             <button
-              className="btn rounded-full font-normal w-fit h-fit text-2xl px-16 py-2
+              className="btn rounded-full font-normal w-full h-fit text-2xl px-16 py-2
               text-black bg-white hover:bg-opacity-50
               border-2 border-black shadow-flat-sm shadow-black
               dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"

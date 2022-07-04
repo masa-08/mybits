@@ -23,7 +23,9 @@ export const RoadmapItem: React.FC<Props> = ({ title, body, done = false }) => {
           <div className="w-full">
             <div className="mx-4 mt-4 border-b border-gray-300" />
             <div className="card-body pt-4 px-6 pb-0">
-              <span className="text-lg font-fira dark:text-dark-content">{body}</span>
+              <span className="text-lg font-fira text-light-content dark:text-dark-content">
+                {body}
+              </span>
             </div>
           </div>
         )}

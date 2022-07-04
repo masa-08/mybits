@@ -17,7 +17,9 @@ export const AboutItem: React.FC<Props> = ({ title, body, children, paddingTop =
             <span className="text-4xl text-blue-500">{title}</span>
           </div>
           <div className="card-body p-3">
-            <span className="text-xl font-fira dark:text-dark-content">{body}</span>
+            <span className="text-xl font-fira text-light-content dark:text-dark-content">
+              {body}
+            </span>
           </div>
         </div>
       </div>
