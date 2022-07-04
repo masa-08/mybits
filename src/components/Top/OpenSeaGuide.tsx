@@ -1,12 +1,10 @@
-import { BabyIcon } from './Icons'
-
 export const OpenSeaGuide = () => {
   return (
     <>
       <div className="hidden md:block">
         <div className="w-screen bg-gray-700 dark:bg-slate-600 h-96 flex gap-5 ml-force-screen pl-3">
           <div className="flex flex-col justify-center gap-3 px-3 lg:ml-adjusted">
-            <p className="text-6xl text-white mb-5">Visit NEOBABY in OpenSea</p>
+            <p className="text-5xl text-white mb-5">Visit NEOBABY in OpenSea</p>
             <a href="https://opensea.io/collection/neobaby">
               <button
                 className="btn rounded-full font-normal w-fit h-fit px-24 py-5
@@ -18,8 +16,14 @@ export const OpenSeaGuide = () => {
               </button>
             </a>
           </div>
-          <div className="my-auto">
-            <BabyIcon height={300} width={300} fill="#FFFFFF" />
+          <div className="m-auto">
+            <figure>
+              <img
+                src="https://storage.googleapis.com/mybits-test/baby-silhouette.webp"
+                alt="image"
+                className="w-60"
+              />
+            </figure>
           </div>
         </div>
       </div>
