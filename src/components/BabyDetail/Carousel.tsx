@@ -1,25 +1,34 @@
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import Slider, { Settings } from 'react-slick'
 import { Image } from './Image'
 import { dummy } from '@/store'
+import { Link } from 'react-router-dom'
 
 export const Carousel = () => {
-  const data = dummy[0]
+  const settings: Settings = {
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    centerMode: true,
+  }
   return (
     <>
-      {
-        // ダミー実装なので、実データを扱う際に修正する
-      }
       <p className="text-3xl px-3 mb-5 text-light-content dark:text-dark-content">
         Would u like to see other babies?
       </p>
-      <div className="carousel carousel-center space-x-4 rounded-box">
-        <button className="btn btn-circle bg-gray-300 border-gray-300 w-9 h-44">{'<'}</button>
-        <Image src={data?.path || ''} />
-        <Image src={data?.path || ''} />
-        <Image src={data?.path || ''} />
-        <Image src={data?.path || ''} />
-        <Image src={data?.path || ''} />
-        <button className="btn btn-circle bg-gray-300 border-gray-300 w-9 h-44">{'>'}</button>
-      </div>
+      <Slider {...settings} className="w-carousel lg:w-full">
+        {dummy.slice(0, 4).map((img, i) => (
+          <div key={img.id} className="p-3">
+            <Link to={`/babies/${('000' + (i + 1).toString()).slice(-3)}`}>
+              <Image src={img.path} />
+            </Link>
+          </div>
+        ))}
+      </Slider>
     </>
   )
 }
