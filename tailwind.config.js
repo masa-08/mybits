@@ -10,6 +10,9 @@ module.exports = {
         banner: 'calc(100vw / 2.5)',
         'banner-parallax-100': 'calc(100vw / 2.5 - 100px)',
       },
+      width: {
+        carousel: 'calc(100vw - 24px)',
+      },
       colors: {
         'gray-blue': '#EDF2F5',
         black: '#2F2F2F',
