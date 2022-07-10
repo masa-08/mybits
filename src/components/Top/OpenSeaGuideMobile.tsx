@@ -1,4 +1,4 @@
-import { Button } from '../parts'
+import { Button, BabySilhouette } from '../parts'
 
 export const OpenSeaGuideMobile = () => {
   return (
@@ -13,14 +13,8 @@ export const OpenSeaGuideMobile = () => {
               </a>
             </div>
           </div>
-          <div className="mx-auto -mb-4">
-            <figure>
-              <img
-                src="https://storage.googleapis.com/mybits-test/baby-silhouette.webp"
-                alt="image"
-                className="w-28"
-              />
-            </figure>
+          <div className="mx-auto -mb-5">
+            <BabySilhouette size="sm" />
           </div>
         </div>
       </div>

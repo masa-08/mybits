@@ -1,6 +1,5 @@
-import { OpenseaIcon, TwitterIcon } from './Icons'
 import { Menu } from './Menu'
-import { Logo } from '../parts'
+import { Logo, OpenseaIcon, TwitterIcon } from '../parts'
 
 export const Header = () => {
   return (

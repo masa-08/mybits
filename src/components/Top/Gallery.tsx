@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
-import { Button, ImageDummy, ImageLink } from '../parts'
+import { Button, BabySilhouette, ImageLink } from '../parts'
 import { SectionHeader } from '../templates'
 
 export const Gallery = () => {
@@ -23,7 +23,7 @@ export const Gallery = () => {
               <div style={{ flex: '0 0 calc(50% - 6px)' }}>
                 <ImageLink to="/babies/004" imageSrc={dummy[3].path} />
               </div>
-              <ImageDummy color="yellow" />
+              <BabySilhouette color="yellow" padding="md" />
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ export const Gallery = () => {
               <div style={{ flex: '0 0 calc(50% - 6px)' }}>
                 <ImageLink to="/babies/001" imageSrc={dummy[0].path} />
               </div>
-              <ImageDummy color="green" />
+              <BabySilhouette color="green" padding="md" />
             </div>
           </div>
           <div style={{ flex: '0 0 calc(50% - 6px)' }}>

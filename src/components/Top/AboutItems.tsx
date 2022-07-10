@@ -1,6 +1,5 @@
-import { AboutTag } from '../parts'
+import { AboutTag, BuddyIcon, HeartIcon, QRIcon } from '../parts'
 import { AboutItem } from './AboutItem'
-import { BuddyIcon, HeartIcon, QRIcon } from './Icons'
 
 export const AboutItems = () => {
   return (

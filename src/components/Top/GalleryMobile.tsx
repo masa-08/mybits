@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
-import { Button, ImageDummy, ImageLink } from '../parts'
+import { Button, BabySilhouette, ImageLink } from '../parts'
 import { SectionHeader } from '../templates'
 
 export const GalleryMobile = () => {
@@ -16,14 +16,14 @@ export const GalleryMobile = () => {
           </div>
           <div className="flex flex-col gap-3">
             <ImageLink to="/babies/002" imageSrc={dummy[1].path} />
-            <ImageDummy color="yellow" />
+            <BabySilhouette color="yellow" padding="sm" />
           </div>
         </div>
         <div className="my-3"></div>
         <div className="flex gap-3">
           <div className="flex flex-col gap-3">
             <ImageLink to="/babies/003" imageSrc={dummy[2].path} />
-            <ImageDummy color="green" />
+            <BabySilhouette color="green" padding="sm" />
           </div>
           <div style={{ flex: '0 0 calc(66.6% - 4px)' }}>
             <ImageLink to="/babies/004" imageSrc={dummy[3].path} />
