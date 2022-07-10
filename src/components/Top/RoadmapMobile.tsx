@@ -1,5 +1,5 @@
 import { RoadmapItems } from './RoadmapItems'
-import { RoadmapDivideTriangle } from './RoadmapDivideTriangle'
+import { Triangle } from '../parts/Triangle'
 import { SectionHeader } from '../templates'
 
 export const RoadmapMobile = () => {
@@ -10,7 +10,7 @@ export const RoadmapMobile = () => {
           <SectionHeader title="Roadmap" />
         </div>
         <div className="flex flex-col gap-3">
-          <RoadmapItems divider={<RoadmapDivideTriangle />} />
+          <RoadmapItems divider={<Triangle />} />
         </div>
       </div>
     </>
