@@ -28,8 +28,8 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
             <MenuItem title="Gallery" to="/#gallery" onClick={() => setModal(false)} />
             <MenuItem title="Roadmap" to="/#roadmap" onClick={() => setModal(false)} />
             <div className="border-t-gray-300 dark:border-t-dark-content border-t w-full my-4" />
-            <MenuSocial type="opensea" />
-            <MenuSocial type="twitter" />
+            <MenuSocial type="opensea" size="md" />
+            <MenuSocial type="twitter" size="md" />
           </ul>
         </div>
       </div>

@@ -1,27 +1,15 @@
 import React from 'react'
-import { OpenseaIconBlue, TwitterIconBlue } from './Icons'
+import { SocialLink } from './SocialLink'
 
 type Props = {
   type: 'twitter' | 'opensea'
+  size: 'md' | 'sm'
 }
 
-// NOTE: 共通なのでグローバルでもいい
-const twitterLink = 'https://twitter.com/harufy009'
-const openseaLink = 'https://opensea.io/collection/neobaby'
-
-export const MenuSocial: React.FC<Props> = ({ type }) => {
+export const MenuSocial: React.FC<Props> = ({ type, size }) => {
   return (
     <li>
-      <a
-        href={type === 'twitter' ? twitterLink : openseaLink}
-        className="flex items-center gap-2"
-        style={{ color: `${type === 'twitter' ? '#1b9df0' : '#2081E2'}` }}
-      >
-        <figure className="w-7 h-7">
-          {type === 'twitter' ? <TwitterIconBlue /> : <OpenseaIconBlue />}
-        </figure>
-        <span className="text-3xl">{type === 'twitter' ? 'Twitter' : 'OpenSea'}</span>
-      </a>
+      <SocialLink type={type} size={size} />
     </li>
   )
 }
