@@ -1,4 +1,4 @@
-import { SocialLink } from '../parts'
+import { CopyRight, SocialLink } from '../parts'
 
 export const FooterMobile = () => {
   return (
@@ -11,7 +11,7 @@ export const FooterMobile = () => {
                 <SocialLink type="opensea" size="sm" />
                 <SocialLink type="twitter" size="sm" />
               </div>
-              <p className="text-sm text-gray-400">&copy; 2022 NEOBABY</p>
+              <CopyRight />
             </div>
           </div>
         </div>
