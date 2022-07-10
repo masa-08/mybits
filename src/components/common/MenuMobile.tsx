@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { HashLink } from 'react-router-hash-link'
-import { Menu, X } from 'react-feather'
+import { Menu as MenuIcon, X } from 'react-feather'
 import { HeaderMobileLogo } from './HeaderMobileLogo'
-import { OpenseaIconBlue, TwitterIconBlue } from './Icons'
+import { MenuItem, MenuSocial } from '../parts'
 
 type Props = {
   top?: boolean
@@ -13,7 +12,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
 
   return (
     <>
-      <Menu
+      <MenuIcon
         className={`${top && 'text-white'} dark:text-white`}
         size={36}
         onClick={() => setModal(true)}
@@ -25,46 +24,12 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
             <X className="dark:text-white" size={36} onClick={() => setModal(false)} />
           </div>
           <ul className="menu px-2 mt-2">
-            <li>
-              <HashLink smooth to="/#about" onClick={() => setModal(false)}>
-                <span className="text-3xl dark:text-white">About</span>
-              </HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="/#gallery" onClick={() => setModal(false)}>
-                <span className="text-3xl dark:text-white">Gallery</span>
-              </HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="/#roadmap" onClick={() => setModal(false)}>
-                <span className="text-3xl dark:text-white">Roadmap</span>
-              </HashLink>
-            </li>
+            <MenuItem title="About" to="/#about" onClick={() => setModal(false)} />
+            <MenuItem title="Gallery" to="/#gallery" onClick={() => setModal(false)} />
+            <MenuItem title="Roadmap" to="/#roadmap" onClick={() => setModal(false)} />
             <div className="border-t-gray-300 dark:border-t-dark-content border-t w-full my-4" />
-            <li>
-              <a
-                href="https://opensea.io/collection/neobaby"
-                className="flex items-center gap-2"
-                style={{ color: '#2081E2' }}
-              >
-                <figure className="w-7 h-7">
-                  <OpenseaIconBlue />
-                </figure>
-                <span className="text-3xl">OpenSea</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/harufy009"
-                className="flex items-center gap-2"
-                style={{ color: '#1b9df0' }}
-              >
-                <figure className="w-7 h-7">
-                  <TwitterIconBlue />
-                </figure>
-                <span className="text-3xl">Twitter</span>
-              </a>
-            </li>
+            <MenuSocial type="opensea" />
+            <MenuSocial type="twitter" />
           </ul>
         </div>
       </div>
