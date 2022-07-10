@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
 import { SectionIcon } from './SectionIcon'
+import { Button } from '../parts'
 
 export const GalleryMobile = () => {
   return (
@@ -57,14 +58,13 @@ export const GalleryMobile = () => {
         </div>
         <div className="pt-3 flex justify-center">
           <Link to="babies" className="w-full">
-            <button
-              className="btn rounded-full font-normal w-full h-fit text-2xl px-16 py-2
-              text-black bg-white hover:bg-opacity-50
-              border-2 border-black shadow-flat-sm shadow-black
-              dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
-            >
-              View all
-            </button>
+            <Button
+              text="view all babies"
+              textSize="2xl"
+              shadowSize="sm"
+              padding="sm"
+              widthFull={true}
+            />
           </Link>
         </div>
       </div>

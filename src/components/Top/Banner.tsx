@@ -1,4 +1,5 @@
 import { Parallax } from 'react-parallax'
+import { Button } from '../parts'
 
 export const Banner = () => {
   return (
@@ -16,13 +17,13 @@ export const Banner = () => {
             <p className="text-7xl text-white">your lovable NFT buddy.</p>
             <div className="pt-5">
               <a href="https://opensea.io/collection/neobaby">
-                <button
-                  className="btn rounded-full font-normal w-fit h-fit px-12 py-5
-                  text-4xl text-white bg-transparent hover:bg-opacity-50
-                  border-2 border-white shadow-flat-md shadow-white"
-                >
-                  view in opensea
-                </button>
+                <Button
+                  text="view in opensea"
+                  transparent={true}
+                  textSize="4xl"
+                  shadowSize="md"
+                  padding="md"
+                />
               </a>
             </div>
           </div>

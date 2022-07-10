@@ -1,3 +1,4 @@
+export { Button } from './Button'
 export { CopyRight } from './CopyRight'
 export { Logo } from './Logo'
 export { MenuItem } from './MenuItem'

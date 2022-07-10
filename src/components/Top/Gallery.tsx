@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
 import { SectionIcon } from './SectionIcon'
+import { Button } from '../parts'
 
 export const Gallery = () => {
   return (
@@ -85,14 +86,7 @@ export const Gallery = () => {
         </div>
         <div className="p-6 flex justify-center">
           <Link to="babies">
-            <button
-              className="btn rounded-full font-normal w-fit h-fit px-24 py-5
-                  text-4xl text-black bg-white hover:bg-opacity-50
-                  border-2 border-black shadow-flat-md shadow-black
-                  dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
-            >
-              View all
-            </button>
+            <Button text="view all babies" textSize="4xl" shadowSize="md" padding="md" />
           </Link>
         </div>
       </div>

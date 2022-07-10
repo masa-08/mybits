@@ -1,5 +1,6 @@
 import { HeaderMobile } from '@/components/common'
 import { Parallax } from 'react-parallax'
+import { Button } from '../parts'
 
 export const BannerMobile = () => {
   return (
@@ -20,13 +21,13 @@ export const BannerMobile = () => {
               <p className="text-5xl text-white">NFT buddy.</p>
               <div className="pt-5">
                 <a href="https://opensea.io/collection/neobaby">
-                  <button
-                    className="btn rounded-full font-normal w-fit h-fit px-6 py-2
-                    text-2xl text-white bg-transparent hover:bg-opacity-50
-                    border-2 border-white shadow-flat-sm shadow-white"
-                  >
-                    view in opensea
-                  </button>
+                  <Button
+                    text="view in opensea"
+                    transparent={true}
+                    textSize="2xl"
+                    shadowSize="sm"
+                    padding="sm"
+                  />
                 </a>
               </div>
             </div>
