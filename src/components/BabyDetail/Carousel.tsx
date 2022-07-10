@@ -1,9 +1,8 @@
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider, { Settings } from 'react-slick'
-import { Image } from './Image'
 import { dummy } from '@/store'
-import { Link } from 'react-router-dom'
+import { ImageLink } from '../parts'
 
 export const Carousel = () => {
   const settings: Settings = {
@@ -23,9 +22,10 @@ export const Carousel = () => {
       <Slider {...settings} className="w-carousel lg:w-full">
         {dummy.slice(0, 4).map((img, i) => (
           <div key={img.id} className="p-3">
-            <Link to={`/babies/${('000' + (i + 1).toString()).slice(-3)}`}>
-              <Image src={img.path} />
-            </Link>
+            <ImageLink
+              to={`/babies/${('000' + (i + 1).toString()).slice(-3)}`}
+              imageSrc={img.path}
+            />
           </div>
         ))}
       </Slider>
