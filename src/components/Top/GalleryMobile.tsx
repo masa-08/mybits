@@ -1,16 +1,14 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
-import { Button, SectionIcon } from '../parts'
+import { Button } from '../parts'
+import { SectionHeader } from '../templates'
 
 export const GalleryMobile = () => {
   return (
     <>
       <div className="md:hidden">
-        <div className="flex gap-3 px-3">
-          <div className="my-2">
-            <SectionIcon />
-          </div>
-          <p className="text-5xl mb-4 dark:text-white">Gallery</p>
+        <div className="pl-3 mb-4">
+          <SectionHeader title="Gallery" />
         </div>
         <div className="flex gap-3">
           <figure style={{ flex: '0 0 calc(66.6% - 4px)' }}>
