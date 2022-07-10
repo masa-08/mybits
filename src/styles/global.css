@@ -9,12 +9,3 @@
     font-family: VT323, system-ui, san-serif;
   }
 }
-
-@layer components {
-  .title-mobile {
-    @apply text-4xl leading-none dark:text-white
-  }
-  .title-mobile-top {
-    @apply title-mobile text-white
-  }
-}

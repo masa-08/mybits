@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Menu as MenuIcon, X } from 'react-feather'
-import { HeaderMobileLogo } from './HeaderMobileLogo'
-import { MenuItem, MenuSocial } from '../parts'
+import { Logo, MenuItem, MenuSocial } from '../parts'
 
+// TODO: 不要なProps
 type Props = {
   top?: boolean
 }
@@ -20,7 +20,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
       <div className={`h-screen w-screen rounded-none p-0 z-50 fixed ${modal || 'hidden'}`}>
         <div className="bg-gray-blue dark:bg-dark-bg h-full w-full -ml-6 -mt-8">
           <div className="navbar flex justify-between items-start px-6 pt-4">
-            <HeaderMobileLogo />
+            <Logo />
             <X className="dark:text-white" size={36} onClick={() => setModal(false)} />
           </div>
           <ul className="menu px-2 mt-2">
