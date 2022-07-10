@@ -1,3 +1,5 @@
+export { AboutTag } from './AboutTag'
+export { AboutItemTitle } from './AboutItemTitle'
 export { Button } from './Button'
 export { CopyRight } from './CopyRight'
 export { Logo } from './Logo'
