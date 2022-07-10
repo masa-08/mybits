@@ -1,3 +1,5 @@
+import { Button, BabySilhouette } from '../parts'
+
 export const OpenSeaGuideMobile = () => {
   return (
     <>
@@ -7,25 +9,12 @@ export const OpenSeaGuideMobile = () => {
             <p className="text-4xl text-white">Visit NEOBABY in OpenSea</p>
             <div className="flex items-center">
               <a href="https://opensea.io/collection/neobaby">
-                <button
-                  className="btn rounded-full font-normal w-fit h-fit px-6 py-2 text-2xl
-                            text-black bg-white hover:bg-opacity-50
-                            border-2 border-black shadow-flat-sm shadow-black
-                            dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
-                >
-                  view in opensea
-                </button>
+                <Button text="view in opensea" textSize="2xl" shadowSize="sm" padding="sm" />
               </a>
             </div>
           </div>
-          <div className="mx-auto -mb-4">
-            <figure>
-              <img
-                src="https://storage.googleapis.com/mybits-test/baby-silhouette.webp"
-                alt="image"
-                className="w-28"
-              />
-            </figure>
+          <div className="mx-auto -mb-5">
+            <BabySilhouette size="sm" />
           </div>
         </div>
       </div>

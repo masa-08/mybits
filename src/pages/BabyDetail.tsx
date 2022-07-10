@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { HeaderMobile, FooterMobile } from '@/components/common'
 import { Carousel, Description, DescriptionMobile, Image } from '@/components/BabyDetail'
 import { dummy } from '@/store'
+import { Button } from '@/components/parts'
 
 export const BabyDetail = () => {
   const params = useParams()
@@ -19,14 +20,7 @@ export const BabyDetail = () => {
               <Description id={params.id} />
               <div className="pt-6">
                 <a href="https://opensea.io/collection/neobaby">
-                  <button
-                    className="btn rounded-full font-normal w-full h-fit px-11 py-3
-                    text-4xl text-black bg-white hover:bg-opacity-50
-                    border-2 border-black shadow-flat-md shadow-black
-                  dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
-                  >
-                    View in OpenSea
-                  </button>
+                  <Button text="view in opensea" textSize="4xl" shadowSize="md" padding="md" />
                 </a>
               </div>
             </div>
@@ -49,14 +43,13 @@ export const BabyDetail = () => {
               <DescriptionMobile id={params.id} />
               <div className="pt-6">
                 <a href="https://opensea.io/collection/neobaby">
-                  <button
-                    className="btn rounded-full w-full h-fit py-2 text-2xl
-                              text-black bg-white hover:bg-opacity-50
-                              border-2 border-black shadow-flat-sm shadow-black
-                              dark:text-white dark:bg-light-slate dark:border-dark-slate dark:shadow-dark-slate"
-                  >
-                    View in OpenSea
-                  </button>
+                  <Button
+                    text="view in opensea"
+                    textSize="2xl"
+                    shadowSize="sm"
+                    padding="sm"
+                    widthFull={true}
+                  />
                 </a>
               </div>
             </div>

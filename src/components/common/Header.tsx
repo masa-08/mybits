@@ -1,17 +1,12 @@
-import { Link } from 'react-router-dom'
-import { OpenseaIcon, TwitterIcon } from './Icons'
 import { Menu } from './Menu'
+import { Logo, OpenseaIcon, TwitterIcon } from '../parts'
 
 export const Header = () => {
   return (
     <>
       <div className="hidden md:block">
         <div className="navbar flex justify-between items-center px-3 max-w-5xl mx-auto">
-          <div className="flex flex-col items-start">
-            <Link to="/">
-              <p className="text-5xl dark:text-white leading-none">NEOBABY</p>
-            </Link>
-          </div>
+          <Logo />
           <div>
             <div className="hidden md:block">
               <Menu />

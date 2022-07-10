@@ -1,5 +1,5 @@
+import { AboutTag, BuddyIcon, HeartIcon, QRIcon } from '../parts'
 import { AboutItem } from './AboutItem'
-import { BuddyIcon, HeartIcon, QRIcon } from './Icons'
 
 export const AboutItems = () => {
   return (
@@ -15,8 +15,8 @@ export const AboutItems = () => {
         body="Owner can change the name and take care of the baby!"
         paddingTop={false}
       >
-        <div className="bg-accent-green border-0 text-xl text-white px-2 absolute top-4 right-0">
-          Upcoming
+        <div className="absolute top-4 right-0">
+          <AboutTag />
         </div>
         <HeartIcon />
       </AboutItem>
@@ -24,8 +24,8 @@ export const AboutItems = () => {
         title="Crypto Buddies"
         body="Babies sympathize with you through the updowns of Crypto"
       >
-        <div className="bg-accent-green border-0 text-xl text-white px-2 absolute top-4 right-0">
-          Upcoming
+        <div className="absolute top-4 right-0">
+          <AboutTag />
         </div>
         <BuddyIcon />
       </AboutItem>

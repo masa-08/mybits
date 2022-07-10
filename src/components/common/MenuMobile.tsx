@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { HashLink } from 'react-router-hash-link'
-import { Menu, X } from 'react-feather'
-import { HeaderMobileLogo } from './HeaderMobileLogo'
-import { OpenseaIconBlue, TwitterIconBlue } from './Icons'
+import { Menu as MenuIcon, X } from 'react-feather'
+import { Logo, MenuItem, MenuSocial } from '../parts'
 
+// TODO: 不要なProps
 type Props = {
   top?: boolean
 }
@@ -13,7 +12,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
 
   return (
     <>
-      <Menu
+      <MenuIcon
         className={`${top && 'text-white'} dark:text-white`}
         size={36}
         onClick={() => setModal(true)}
@@ -21,50 +20,16 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
       <div className={`h-screen w-screen rounded-none p-0 z-50 fixed ${modal || 'hidden'}`}>
         <div className="bg-gray-blue dark:bg-dark-bg h-full w-full -ml-6 -mt-8">
           <div className="navbar flex justify-between items-start px-6 pt-4">
-            <HeaderMobileLogo />
+            <Logo />
             <X className="dark:text-white" size={36} onClick={() => setModal(false)} />
           </div>
           <ul className="menu px-2 mt-2">
-            <li>
-              <HashLink smooth to="/#about" onClick={() => setModal(false)}>
-                <span className="text-3xl dark:text-white">About</span>
-              </HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="/#gallery" onClick={() => setModal(false)}>
-                <span className="text-3xl dark:text-white">Gallery</span>
-              </HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="/#roadmap" onClick={() => setModal(false)}>
-                <span className="text-3xl dark:text-white">Roadmap</span>
-              </HashLink>
-            </li>
+            <MenuItem title="About" to="/#about" onClick={() => setModal(false)} />
+            <MenuItem title="Gallery" to="/#gallery" onClick={() => setModal(false)} />
+            <MenuItem title="Roadmap" to="/#roadmap" onClick={() => setModal(false)} />
             <div className="border-t-gray-300 dark:border-t-dark-content border-t w-full my-4" />
-            <li>
-              <a
-                href="https://opensea.io/collection/neobaby"
-                className="flex items-center gap-2"
-                style={{ color: '#2081E2' }}
-              >
-                <figure className="w-7 h-7">
-                  <OpenseaIconBlue />
-                </figure>
-                <span className="text-3xl">OpenSea</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/harufy009"
-                className="flex items-center gap-2"
-                style={{ color: '#1b9df0' }}
-              >
-                <figure className="w-7 h-7">
-                  <TwitterIconBlue />
-                </figure>
-                <span className="text-3xl">Twitter</span>
-              </a>
-            </li>
+            <MenuSocial type="opensea" size="md" />
+            <MenuSocial type="twitter" size="md" />
           </ul>
         </div>
       </div>

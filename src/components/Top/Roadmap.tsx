@@ -1,18 +1,16 @@
 import { RoadmapItems } from './RoadmapItems'
-import { SectionIcon } from './SectionIcon'
+import { SectionHeader } from '../templates'
+import { Triangle } from '../parts'
 
 export const Roadmap = () => {
   return (
     <>
       <div className="hidden md:block">
-        <div className="flex gap-3 px-3">
-          <div className="my-2">
-            <SectionIcon />
-          </div>
-          <p className="text-5xl leading-none mb-4 dark:text-white">Roadmap</p>
+        <div className="pl-3 mb-4">
+          <SectionHeader title="Roadmap" />
         </div>
-        <div className="flex flex-wrap gap-3 justify-between">
-          <RoadmapItems divider={<></>} />
+        <div className="flex flex-col gap-3 justify-between">
+          <RoadmapItems divider={<Triangle />} />
         </div>
       </div>
     </>

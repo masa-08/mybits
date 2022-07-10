@@ -1,17 +1,14 @@
-import { SectionIcon } from './SectionIcon'
+import { SectionHeader } from '../templates'
 
 export const Updates = () => {
   return (
     <>
-      <div className="flex gap-3 px-3">
-        <div className="my-2">
-          <SectionIcon />
-        </div>
-        <p className="text-5xl dark:text-white">Updates</p>
+      <div className="pl-3 mb-4">
+        <SectionHeader title="Updates" />
+        <p className="mt-3 text-xl font-fira text-light-content dark:text-dark-content">
+          Coming soon!
+        </p>
       </div>
-      <p className="text-xl p-3 font-fira text-light-content dark:text-dark-content">
-        Coming soon!
-      </p>
     </>
   )
 }
