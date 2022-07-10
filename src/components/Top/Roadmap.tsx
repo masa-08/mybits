@@ -1,5 +1,5 @@
 import { RoadmapItems } from './RoadmapItems'
-import { SectionIcon } from './SectionIcon'
+import { SectionIcon } from '../parts'
 
 export const Roadmap = () => {
   return (

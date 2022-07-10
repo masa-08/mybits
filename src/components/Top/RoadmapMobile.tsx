@@ -1,6 +1,6 @@
 import { RoadmapItems } from './RoadmapItems'
 import { RoadmapDivideTriangle } from './RoadmapDivideTriangle'
-import { SectionIcon } from './SectionIcon'
+import { SectionIcon } from '../parts'
 
 export const RoadmapMobile = () => {
   return (

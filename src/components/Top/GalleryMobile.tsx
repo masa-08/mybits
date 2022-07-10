@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { dummy } from '@/store'
-import { SectionIcon } from './SectionIcon'
-import { Button } from '../parts'
+import { Button, SectionIcon } from '../parts'
 
 export const GalleryMobile = () => {
   return (

@@ -1,5 +1,5 @@
 import { AboutItems } from './AboutItems'
-import { SectionIcon } from './SectionIcon'
+import { SectionIcon } from '../parts'
 
 export const About = () => {
   return (

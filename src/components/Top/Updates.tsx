@@ -1,4 +1,4 @@
-import { SectionIcon } from './SectionIcon'
+import { SectionIcon } from '../parts'
 
 export const Updates = () => {
   return (
