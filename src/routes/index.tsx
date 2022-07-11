@@ -1,5 +1,6 @@
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { Frame, Top, BabyList, BabyDetail } from '@/pages'
-import { Route, Routes } from 'react-router-dom'
 
 export const AppRoutes = () => {
   return (
@@ -11,4 +12,15 @@ export const AppRoutes = () => {
       </Route>
     </Routes>
   )
+}
+
+// Ref: https://v5.reactrouter.com/web/guides/scroll-restoration
+export const ScrollToTop = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
 }
