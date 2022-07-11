@@ -1,42 +1,22 @@
 export const dummy = [
   {
-    path: 'https://storage.googleapis.com/mybits-test/cat.png',
+    path: 'https://storage.googleapis.com/mybits-test/001.PNG',
     id: '001',
-    address: '0xXXXXXXXXX',
+    address: 'Waiting 4 U',
   },
   {
-    path: 'https://storage.googleapis.com/mybits-test/mouse.png',
+    path: 'https://storage.googleapis.com/mybits-test/002.PNG',
     id: '002',
     address: 'Waiting 4 U',
   },
   {
-    path: 'https://storage.googleapis.com/mybits-test/rabbit.png',
+    path: 'https://storage.googleapis.com/mybits-test/003.PNG',
     id: '003',
     address: 'Waiting 4 U',
   },
   {
-    path: 'https://storage.googleapis.com/mybits-test/fox.png',
+    path: 'https://storage.googleapis.com/mybits-test/004.PNG',
     id: '004',
-    address: 'Waiting 4 U',
-  },
-  {
-    path: 'https://storage.googleapis.com/mybits-test/cat.png',
-    id: '005',
-    address: '0xXXXXXXXXX',
-  },
-  {
-    path: 'https://storage.googleapis.com/mybits-test/mouse.png',
-    id: '006',
-    address: 'Waiting 4 U',
-  },
-  {
-    path: 'https://storage.googleapis.com/mybits-test/rabbit.png',
-    id: '007',
-    address: 'Waiting 4 U',
-  },
-  {
-    path: 'https://storage.googleapis.com/mybits-test/fox.png',
-    id: '008',
     address: 'Waiting 4 U',
   },
 ]
