@@ -1,4 +1,4 @@
-import { HeaderMobile } from '@/components/common'
+import { Header } from '@/components/templates'
 import { List, ListItem, ListItemMobile } from '@/components/BabyList'
 import { dummy } from '@/store'
 
@@ -16,7 +16,7 @@ export const BabyList = () => {
       </div>
       <div className="block md:hidden">
         <div className="flex flex-col min-h-screen">
-          <HeaderMobile />
+          <Header />
           <div className="px-3">
             <List>
               {dummy.map((d) => {

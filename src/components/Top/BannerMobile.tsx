@@ -1,5 +1,5 @@
-import { HeaderMobile } from '@/components/common'
 import { Parallax } from 'react-parallax'
+import { Header } from '../templates/Header'
 import { Button } from '../parts'
 
 export const BannerMobile = () => {
@@ -13,7 +13,7 @@ export const BannerMobile = () => {
           strength={100}
           className="flex flex-col w-screen min-h-screen"
         >
-          <HeaderMobile top={true} />
+          <Header mobileTop={true} />
           <div className="flex-1 mt-48">
             <div className="flex flex-col justify-center gap-3 h-full px-6">
               <p className="text-4xl text-white">NEOBABY,</p>

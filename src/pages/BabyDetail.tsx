@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { HeaderMobile } from '@/components/common'
+import { Header } from '@/components/templates'
 import { Carousel, Description, DescriptionMobile, Image } from '@/components/BabyDetail'
 import { dummy } from '@/store'
 import { Button } from '@/components/parts'
@@ -11,7 +11,6 @@ export const BabyDetail = () => {
     <>
       <div className="hidden md:block mb-12">
         <div className="px-3">
-          <div className="mt-3" />
           <div className="flex gap-6">
             <div className="w-2/4">
               <Image src={data?.path || ''} />
@@ -34,11 +33,9 @@ export const BabyDetail = () => {
       }
       <div className="block md:hidden">
         <div className="flex flex-col min-h-screen">
-          <HeaderMobile />
+          <Header />
           <div className="px-3">
-            <div className="pt-2">
-              <Image src={data?.path || ''} />
-            </div>
+            <Image src={data?.path || ''} />
             <div className="px-3 pt-6">
               <DescriptionMobile id={params.id} />
               <div className="pt-6">
