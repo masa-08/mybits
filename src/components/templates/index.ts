@@ -1,3 +1,5 @@
+export { Banner } from './Banner'
+export { BannerMobile } from './BannerMobile'
 export { Footer } from './Footer'
 export { Header } from './Header'
 export { Layout } from './Layout'

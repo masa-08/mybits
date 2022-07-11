@@ -1,7 +1,5 @@
 export { About } from './About'
 export { AboutMobile } from './AboutMobile'
-export { Banner } from './Banner'
-export { BannerMobile } from './BannerMobile'
 export { Gallery } from './Gallery'
 export { GalleryMobile } from './GalleryMobile'
 export { OpenSeaGuide } from './OpenSeaGuide'

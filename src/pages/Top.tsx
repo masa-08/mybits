@@ -1,9 +1,7 @@
-import { Footer, Header } from '@/components/templates'
+import { Footer, Header, Banner, BannerMobile } from '@/components/templates'
 import {
   About,
   AboutMobile,
-  Banner,
-  BannerMobile,
   Gallery,
   GalleryMobile,
   OpenSeaGuide,
@@ -18,9 +16,11 @@ export const Top = () => {
     <>
       <div className="hidden md:block">
         <Header />
+        <Banner />
       </div>
-      <Banner />
-      <BannerMobile />
+      <div className="block md:hidden">
+        <BannerMobile />
+      </div>
       <div className="px-3 md:flex md:justify-center md:max-w-5xl md:flex-grow md:mx-auto">
         <div>
           <div id="about" className="mt-14 md:mt-20">
