@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { HeaderMobile, FooterMobile } from '@/components/common'
+import { HeaderMobile } from '@/components/common'
 import { Carousel, Description, DescriptionMobile, Image } from '@/components/BabyDetail'
 import { dummy } from '@/store'
 import { Button } from '@/components/parts'
@@ -9,7 +9,7 @@ export const BabyDetail = () => {
   const data = dummy.find((d) => d.id === params.id)
   return (
     <>
-      <div className="hidden md:block">
+      <div className="hidden md:block mb-12">
         <div className="px-3">
           <div className="mt-3" />
           <div className="flex gap-6">
@@ -55,7 +55,6 @@ export const BabyDetail = () => {
             </div>
           </div>
           <div className="flex-1 mb-4" />
-          <FooterMobile />
         </div>
       </div>
     </>

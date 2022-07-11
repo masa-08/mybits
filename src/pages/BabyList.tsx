@@ -1,11 +1,11 @@
-import { HeaderMobile, FooterMobile } from '@/components/common'
+import { HeaderMobile } from '@/components/common'
 import { List, ListItem, ListItemMobile } from '@/components/BabyList'
 import { dummy } from '@/store'
 
 export const BabyList = () => {
   return (
     <>
-      <div className="hidden md:block">
+      <div className="hidden md:block mb-12">
         <div className="px-3">
           <List>
             {dummy.map((d) => {
@@ -25,7 +25,6 @@ export const BabyList = () => {
             </List>
           </div>
           <div className="flex-1 mb-4" />
-          <FooterMobile />
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-import { FooterMobile } from '@/components/common'
 import {
   About,
   AboutMobile,
@@ -43,7 +42,6 @@ export const Top = () => {
           <OpenSeaGuide />
           <OpenSeaGuideMobile />
         </div>
-        <FooterMobile />
       </FrameTopDesktop>
     </>
   )
