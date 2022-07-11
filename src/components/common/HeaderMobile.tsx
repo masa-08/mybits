@@ -1,6 +1,6 @@
 import React from 'react'
 import { Logo } from '../parts'
-import { MenuMobile } from './MenuMobile'
+import { MenuMobile } from '../templates/MenuMobile'
 
 type Props = {
   top?: boolean

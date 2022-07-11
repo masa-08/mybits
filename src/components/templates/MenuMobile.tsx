@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Menu as MenuIcon, X } from 'react-feather'
-import { Logo, MenuItem, MenuSocial } from '../parts'
+import { Logo, MenuSocial } from '../parts'
+import { MenuLinksCore } from './MenuLinksCore'
 
-// TODO: 不要なProps
 type Props = {
   top?: boolean
 }
@@ -24,9 +24,7 @@ export const MenuMobile: React.FC<Props> = ({ top = false }) => {
             <X className="dark:text-white" size={36} onClick={() => setModal(false)} />
           </div>
           <ul className="menu px-2 mt-2">
-            <MenuItem title="About" to="/#about" onClick={() => setModal(false)} />
-            <MenuItem title="Gallery" to="/#gallery" onClick={() => setModal(false)} />
-            <MenuItem title="Roadmap" to="/#roadmap" onClick={() => setModal(false)} />
+            <MenuLinksCore onClick={() => setModal(false)} />
             <div className="border-t-gray-300 dark:border-t-dark-content border-t w-full my-4" />
             <MenuSocial type="opensea" size="md" />
             <MenuSocial type="twitter" size="md" />
