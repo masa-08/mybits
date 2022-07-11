@@ -1,1 +1,0 @@
-export { FrameBase } from './FrameBase'

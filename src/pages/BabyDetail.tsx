@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom'
-import { Header } from '@/components/templates'
 import { Carousel, Description, DescriptionMobile, Image } from '@/components/BabyDetail'
 import { dummy } from '@/store'
 import { Button } from '@/components/parts'
@@ -33,7 +32,6 @@ export const BabyDetail = () => {
       }
       <div className="block md:hidden">
         <div className="flex flex-col min-h-screen">
-          <Header />
           <div className="px-3">
             <Image src={data?.path || ''} />
             <div className="px-3 pt-6">

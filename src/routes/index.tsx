@@ -1,12 +1,19 @@
 import { useEffect } from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
-import { Frame, Top, BabyList, BabyDetail } from '@/pages'
+import { Outlet, Route, Routes, useLocation } from 'react-router-dom'
+import { Top, BabyList, BabyDetail } from '@/pages'
+import { Layout as LayoutBase } from '@/components/templates'
+
+const Layout = () => (
+  <LayoutBase>
+    <Outlet />
+  </LayoutBase>
+)
 
 export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Top />} />
-      <Route path="babies" element={<Frame />}>
+      <Route path="babies" element={<Layout />}>
         <Route path="" element={<BabyList />} />
         <Route path=":id" element={<BabyDetail />} />
       </Route>
