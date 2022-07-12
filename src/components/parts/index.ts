@@ -1,6 +1,7 @@
 export { AboutTag } from './AboutTag'
 export { BabySilhouette } from './BabySilhouette'
 export { Button } from './Button'
+export { CardContainer } from './CardContainer'
 export { CardTitle } from './CardTitle'
 export { CardBody } from './CardBody'
 export { CheckBox } from './CheckBox'

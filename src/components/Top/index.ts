@@ -1,5 +1,3 @@
-export { About } from './About'
-export { AboutMobile } from './AboutMobile'
 export { Gallery } from './Gallery'
 export { GalleryMobile } from './GalleryMobile'
 export { OpenSeaGuide } from './OpenSeaGuide'

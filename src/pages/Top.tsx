@@ -1,7 +1,5 @@
-import { Footer, Header, Banner, BannerMobile } from '@/components/templates'
+import { About, Footer, Header, Banner, BannerMobile } from '@/components/templates'
 import {
-  About,
-  AboutMobile,
   Gallery,
   GalleryMobile,
   OpenSeaGuide,
@@ -25,7 +23,6 @@ export const Top = () => {
         <div>
           <div id="about" className="mt-14 md:mt-20">
             <About />
-            <AboutMobile />
           </div>
           <div id="gallery" className="mt-14 md:mt-20">
             <Gallery />
