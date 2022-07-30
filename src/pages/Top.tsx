@@ -1,13 +1,5 @@
-import { About, Footer, Header, Banner, BannerMobile } from '@/components/templates'
-import {
-  Gallery,
-  GalleryMobile,
-  OpenSeaGuide,
-  OpenSeaGuideMobile,
-  Roadmap,
-  Updates,
-} from '@/components/Top'
-import { RoadmapMobile } from '@/components/Top/RoadmapMobile'
+import { About, Footer, Header, Banner, BannerMobile, Roadmap } from '@/components/templates'
+import { Gallery, GalleryMobile, OpenSeaGuide, OpenSeaGuideMobile, Updates } from '@/components/Top'
 
 export const Top = () => {
   return (
@@ -30,7 +22,6 @@ export const Top = () => {
           </div>
           <div id="roadmap" className="mt-14 md:mt-20">
             <Roadmap />
-            <RoadmapMobile />
           </div>
           <div id="updates" className="mt-14 md:mt-20">
             <Updates />
