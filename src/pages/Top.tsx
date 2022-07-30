@@ -4,10 +4,11 @@ import {
   Header,
   Banner,
   BannerMobile,
+  OpenSeaGuide,
   Roadmap,
   Updates,
 } from '@/components/templates'
-import { Gallery, GalleryMobile, OpenSeaGuide, OpenSeaGuideMobile } from '@/components/Top'
+import { Gallery, GalleryMobile } from '@/components/Top'
 
 export const Top = () => {
   return (
@@ -38,7 +39,6 @@ export const Top = () => {
       </div>
       <div className="mt-14 md:mt-20 md:-mb-12">
         <OpenSeaGuide />
-        <OpenSeaGuideMobile />
       </div>
       <Footer />
     </>
