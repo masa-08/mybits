@@ -1,4 +1,4 @@
-import { SectionHeader } from '../templates'
+import { SectionHeader } from './SectionHeader'
 
 export const Updates = () => {
   return (

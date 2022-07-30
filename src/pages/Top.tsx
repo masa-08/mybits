@@ -1,5 +1,13 @@
-import { About, Footer, Header, Banner, BannerMobile, Roadmap } from '@/components/templates'
-import { Gallery, GalleryMobile, OpenSeaGuide, OpenSeaGuideMobile, Updates } from '@/components/Top'
+import {
+  About,
+  Footer,
+  Header,
+  Banner,
+  BannerMobile,
+  Roadmap,
+  Updates,
+} from '@/components/templates'
+import { Gallery, GalleryMobile, OpenSeaGuide, OpenSeaGuideMobile } from '@/components/Top'
 
 export const Top = () => {
   return (
