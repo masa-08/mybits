@@ -1,4 +1,6 @@
 export { About } from './About'
+export { BabyListCard } from './BabyListCard'
+export { BabyListContainer } from './BabyListContainer'
 export { Banner } from './Banner'
 export { BannerMobile } from './BannerMobile'
 export { Footer } from './Footer'

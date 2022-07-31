@@ -15,10 +15,10 @@ type Props = {
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div className="md:flex md:flex-col md:min-h-screen">
+      <div className="flex flex-col min-h-screen">
         <Header />
         <div className="md:max-w-5xl md:mx-auto">{children}</div>
-        <div className="md:flex-1" />
+        <div className="flex-1" />
         <Footer />
       </div>
     </>
