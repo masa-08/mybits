@@ -2,13 +2,13 @@ import {
   About,
   Footer,
   Header,
+  Gallery,
   Banner,
   BannerMobile,
   OpenSeaGuide,
   Roadmap,
   Updates,
 } from '@/components/templates'
-import { Gallery, GalleryMobile } from '@/components/Top'
 
 export const Top = () => {
   return (
@@ -27,7 +27,6 @@ export const Top = () => {
           </div>
           <div id="gallery" className="mt-14 md:mt-20">
             <Gallery />
-            <GalleryMobile />
           </div>
           <div id="roadmap" className="mt-14 md:mt-20">
             <Roadmap />
