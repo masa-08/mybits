@@ -1,55 +1,43 @@
 import { useParams } from 'react-router-dom'
-import { Carousel, Description, DescriptionMobile, Image } from '@/components/BabyDetail'
+import { useMedia } from 'use-media'
 import { dummy } from '@/store'
 import { Button } from '@/components/parts'
+import { Carousel, Description } from '@/components/templates'
 
 export const BabyDetail = () => {
   const params = useParams()
+  const isWide = useMedia({ minWidth: '768px' })
   const data = dummy.find((d) => d.id === params.id)
   return (
     <>
-      <div className="hidden md:block mb-12">
-        <div className="px-3">
-          <div className="flex gap-6">
-            <div className="w-2/4">
-              <Image src={data?.path || ''} />
-            </div>
-            <div className="flex flex-col gap-6">
-              <Description id={params.id} />
-              <div className="pt-6">
-                <a href="https://opensea.io/collection/neobaby">
-                  <Button text="view in opensea" textSize="4xl" shadowSize="md" padding="md" />
-                </a>
-              </div>
+      <div className="px-3">
+        <div className="md:min-h-full flex flex-col md:flex-row md:gap-6">
+          <div className="md:w-2/4">
+            <figure>
+              <img src={data?.path || ''} alt="image" className="rounded-xl" />
+            </figure>
+          </div>
+          <div className="flex flex-col gap-0 md:gap-6 p-3 md:p-0">
+            <Description id={params.id} />
+            <div className="pt-6">
+              <a href="https://opensea.io/collection/neobaby">
+                <Button
+                  text="view in opensea"
+                  textSize={isWide ? '4xl' : '2xl'}
+                  shadowSize={isWide ? 'md' : 'sm'}
+                  padding={isWide ? 'md' : 'sm'}
+                  widthFull={!isWide && true}
+                />
+              </a>
             </div>
           </div>
-          <div className="mt-16 mb-12 border-t border-light-content dark:border-dark-content" />
-          <Carousel />
         </div>
-      </div>
-      {
-        // Mobile
-      }
-      <div className="block md:hidden">
-        <div className="flex flex-col min-h-screen">
-          <div className="px-3">
-            <Image src={data?.path || ''} />
-            <div className="px-3 pt-6">
-              <DescriptionMobile id={params.id} />
-              <div className="pt-6">
-                <a href="https://opensea.io/collection/neobaby">
-                  <Button
-                    text="view in opensea"
-                    textSize="2xl"
-                    shadowSize="sm"
-                    padding="sm"
-                    widthFull={true}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex-1 mb-4" />
+        <div className="my-6 md:my-12 border-t border-light-content dark:border-dark-content" />
+        <p className="text-2xl md:text-3xl px-3 mb-5 text-light-content dark:text-dark-content">
+          Would u like to see other babies?
+        </p>
+        <div className="mb-8 flex flex-col items-center">
+          <Carousel slidesToShow={isWide ? 3 : 1} />
         </div>
       </div>
     </>

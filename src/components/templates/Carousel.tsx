@@ -3,12 +3,17 @@ import 'slick-carousel/slick/slick-theme.css'
 import Slider, { Settings } from 'react-slick'
 import { dummy } from '@/store'
 import { ImageLink } from '../parts'
+import React from 'react'
 
-export const Carousel = () => {
+type Props = {
+  slidesToShow: number
+}
+
+export const Carousel: React.FC<Props> = ({ slidesToShow }) => {
   const settings: Settings = {
     autoplay: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
@@ -16,10 +21,7 @@ export const Carousel = () => {
   }
   return (
     <>
-      <p className="text-3xl px-3 mb-5 text-light-content dark:text-dark-content">
-        Would u like to see other babies?
-      </p>
-      <Slider {...settings} className="w-carousel lg:w-full">
+      <Slider {...settings} className="w-carousel">
         {dummy.slice(0, 4).map((img, i) => (
           <div key={img.id} className="p-3">
             <ImageLink
