@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Outlet, Route, Routes, useLocation } from 'react-router-dom'
-import { Top, BabyList, BabyDetail } from '@/pages'
+import { Top, BabyList, BabyDetail } from '@/views'
 import { Layout as LayoutBase } from '@/components/templates'
 
 const Layout = () => (
