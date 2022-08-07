@@ -6,7 +6,7 @@ export const Roadmap = () => {
   const contents = [
     {
       title: 'Release',
-      done: true,
+      done: false,
     },
     {
       title: 'Show Owner',
