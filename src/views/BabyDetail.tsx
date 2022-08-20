@@ -18,7 +18,14 @@ export const BabyDetail = () => {
             </figure>
           </div>
           <div className="flex flex-col gap-0 md:gap-6 p-3 md:p-0">
-            <Description id={params.id} />
+            <Description
+              id={params.id}
+              status={data?.address}
+              twitterName={data?.twitterName}
+              twitterLink={data?.twitterLink}
+              openseaName={data?.openseaName}
+              openseaLink={data?.openseaLink}
+            />
             <div className="pt-6">
               <a href="https://opensea.io/collection/neobaby">
                 <Button

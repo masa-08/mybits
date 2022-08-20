@@ -2,7 +2,11 @@ export const dummy = [
   {
     path: 'https://storage.googleapis.com/mybits-test/001.PNG',
     id: '001',
-    address: 'Waiting 4 U',
+    address: "I'm loved!",
+    twitterName: 'NFT Artist Ecology',
+    twitterLink: 'https://twitter.com/EcologyNft',
+    openseaName: 'nantaco',
+    openseaLink: 'https://opensea.io/nantaco',
   },
   {
     path: 'https://storage.googleapis.com/mybits-test/002.PNG',
